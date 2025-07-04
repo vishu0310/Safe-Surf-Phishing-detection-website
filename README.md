@@ -1,16 +1,19 @@
-Here's a professional and detailed `README.md` for your project **SafeSurf – Phishing Detection Website**, tailored for your GitHub repository: [https://github.com/vishu0310/Safe-Surf-Phishing-detection-website](https://github.com/vishu0310/Safe-Surf-Phishing-detection-website)
-
----
-
-````markdown
 # 🛡️ SafeSurf – Phishing Detection Website
+
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Flask](https://img.shields.io/badge/Backend-Flask-green)
+![ML](https://img.shields.io/badge/ML-RandomForest-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 **SafeSurf** is an intelligent and user-friendly phishing detection website built to **identify malicious URLs** in real-time using **machine learning** and **URL-based feature analysis**. The platform aims to empower users to browse the internet more safely by flagging suspicious websites before they cause harm.
 
 > 🔍 Detects Phishing URLs | 🧠 ML-Powered | 🌐 Real-Time & Easy-to-Use
 
 ---
-![1000189332](https://github.com/user-attachments/assets/ecf6f91f-7319-4092-a254-c21dc4292166)
+
+![Home Page](https://github.com/user-attachments/assets/ecf6f91f-7319-4092-a254-c21dc4292166)
+
+---
 
 ## 🌟 Features
 
@@ -19,35 +22,43 @@ Here's a professional and detailed `README.md` for your project **SafeSurf – P
 - 📊 **Probability Score**: Get a risk score with prediction confidence.
 - ✅ **Safe & Simple UI**: Minimal, modern interface with clear results.
 - 🚨 **Warning Alerts**: Red flags shown for suspicious domains.
-- 🌐 **WHOIS & SSL Checks** (optional future enhancement).
+- 🌐 **WHOIS & SSL Checks** *(planned)*
 
 ---
 
 ## 🏗️ Tech Stack
 
-| Layer | Technologies |
-|-------|--------------|
-| **Frontend** | HTML, CSS, JavaScript, Bootstrap |
-| **Backend** | Flask (Python), REST API |
-| **Machine Learning** | scikit-learn, pandas, NumPy, joblib |
-| **Dataset** | Phishing & legitimate URLs (from PhishTank, Alexa, etc.) |
-| **Hosting** | Render / Heroku (or local deployment) |
+| Layer         | Technologies                                |
+|---------------|---------------------------------------------|
+| **Frontend**  | HTML, CSS, JavaScript, Bootstrap            |
+| **Backend**   | Flask (Python), REST API                    |
+| **ML Model**  | scikit-learn, pandas, NumPy, joblib         |
+| **Dataset**   | PhishTank, Alexa Top Sites, Custom Features |
+| **Hosting**   | Render / Heroku (or local deployment)       |
 
 ---
 
-## 🧠 ML Model Info
-![1000189334](https://github.com/user-attachments/assets/3f294a15-8e2e-4fd6-8111-8f5f146306e5)
+## 🧠 ML Model Overview
 
-- **Type**: Classification (Phishing vs Legitimate)
-- **Algorithms Used**: Random Forest Classifier (best performing)
-- **Features Extracted**:
+![ML Graph](https://github.com/user-attachments/assets/3f294a15-8e2e-4fd6-8111-8f5f146306e5)
+
+- **Type**: Binary Classification (Phishing vs Legitimate)
+- **Best Model**: Random Forest Classifier
+- **Key Features**:
   - Length of URL
   - Use of `@` or `//`
   - Presence of `https`
   - Number of subdomains
-  - Domain age
-  - Redirection and iframe tags
-  - DNS/WHOIS (optional for full version)
+  - Domain age, redirection tags, and iframes
+  - WHOIS/DNS-based checks *(optional)*
+
+---
+
+## 🖼️ Screenshots
+
+| Homepage                        | Detection Result                 |
+|--------------------------------|----------------------------------|
+| ![Homepage](https://github.com/user-attachments/assets/ecf6f91f-7319-4092-a254-c21dc4292166) | ![ML Output](https://github.com/user-attachments/assets/3f294a15-8e2e-4fd6-8111-8f5f146306e5) |
 
 ---
 
@@ -62,84 +73,49 @@ Safe-Surf-Phishing-detection-website/
 ├── feature_extract.py   # Extracts URL features
 ├── requirements.txt     # Python dependencies
 └── README.md
-````
 
----
 
-## 🚀 How to Run Locally
-
-### 1. Clone the repository
-
-```bash
+🚀 How to Run Locally
+1. Clone the repository
+bash
+Copy
+Edit
 git clone https://github.com/vishu0310/Safe-Surf-Phishing-detection-website.git
 cd Safe-Surf-Phishing-detection-website
-```
-
-### 2. Set up a virtual environment
-
-```bash
+2. Set up a virtual environment
+bash
+Copy
+Edit
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
+3. Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-```
-
-### 4. Run the app
-
-```bash
+4. Run the Flask app
+bash
+Copy
+Edit
 python app.py
-```
+Open your browser at 👉 http://localhost:5000
 
-Then open your browser at [http://localhost:5000](http://localhost:5000)
+✍️ Author
+Vishu Patle
+GitHub • LinkedIn
 
----
+📃 License
+This project is licensed under the MIT License
 
-## 🖼️ Screenshots
+🔮 Future Enhancements
+✅ WHOIS & SSL certificate validation
 
-> *(Add UI screenshots here — home page, result page, alert message, etc.)*
+✅ Real-time browser extension (Chrome/Firefox)
 
----
+✅ Integration with Google Safe Browsing & PhishTank API
 
-## ✍️ Author
+✅ Progressive Web App (PWA) for mobile
 
-* **Vishu Patle** – [GitHub](https://github.com/vishu0310) | [LinkedIn](https://www.linkedin.com/in/vishu0310/)
-
----
-
-## 📃 License
-
-This project is licensed under the [MIT License](LICENSE)
-
----
-
-## 📢 Future Enhancements
-
-* WHOIS data and SSL certificate validation
-* Browser extension for real-time phishing detection
-* Blacklist integration with PhishTank & Google Safe Browsing
-* Responsive mobile-first design
-
----
-
-## 🤝 Contributions
-
-Contributions, suggestions, and pull requests are welcome!
+🤝 Contributions
+Contributions, suggestions, and PRs are welcome!
 Feel free to fork the repo and help improve SafeSurf 🛡️
-
----
-
-> 💡 *Stay smart. Stay safe. Surf secure with SafeSurf.*
-
-```
-
----
-
-Let me know if you'd like:
-- Deployment instructions for **Render**, **Heroku**, or **Replit**
-- A badge system (e.g., `made with Python`, `MIT license`, etc.)
-- A one-liner for LinkedIn/portfolio showcase
-```
